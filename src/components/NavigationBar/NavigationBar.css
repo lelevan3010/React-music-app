@@ -1,0 +1,7 @@
+.NavigationBar{
+    width: 100%;
+    height: 50px;
+    background-color: #FF6050;
+    position: fixed;
+    bottom: 0;
+}

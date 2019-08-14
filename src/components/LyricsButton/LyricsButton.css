@@ -1,0 +1,23 @@
+.LyricsButton{
+    background: #F2F2F2;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    right: 7.01%;
+    top: 37.12%;
+    bottom: 34.85%;
+    width: 150px;
+}
+@media screen and (max-width: 375px) {
+    .LyricsButton{
+        width: 100px;
+    }
+}
+
+.text{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF6050;
+}

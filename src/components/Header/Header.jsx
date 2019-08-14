@@ -1,17 +1,25 @@
 import React from 'react';
 import './Header.css';
-import { ReactComponent as Logo } from '../../logo.svg';
-import PageTitle from '../PageTitle/PageTitle';
-import CountryButton from '../CountryButton/CountryButton';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
 
 function Header() {
-    const title = 'Top 10 tracks in US';
 
 	return (
-		<div className="Header">
-            <Logo className="logo"/>
-            <CountryButton/>
-            <PageTitle title={title}/>
+		<div className="Header">   
+            <div style={{height: 'inherit', display: 'grid'}}>
+                <Logo className="logo"/>
+                <Form inline className="d-flex justify-content-center">
+                    <FormControl 
+                        style={{borderRadius: '20px'}}
+                        type="text" 
+                        placeholder="Song title..." 
+                        className="mx-3" 
+                    />
+                </Form>
+                <div className="curve"></div>
+            </div> 
 		</div>
 	);
 }
