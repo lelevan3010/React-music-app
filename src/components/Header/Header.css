@@ -1,0 +1,10 @@
+.Header {
+    position: fixed;
+    background: #4F4F4F;
+    height: 258px;
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+.CountryButton {
+    width: 170px;
+    height: 33px;
+    background: #FF6050;
+    border-radius: 20px;
+    border: none;
+}
+
+.text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F2F2F2;
+    margin: 0;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
