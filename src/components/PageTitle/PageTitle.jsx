@@ -4,7 +4,7 @@ import './PageTitle.css';
 function PageTitle(props) {
 	return (
 		<div className="PageTitle">
-            {props.title}
+            {props.track}
 		</div>
 	);
 }

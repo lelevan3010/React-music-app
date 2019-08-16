@@ -4,12 +4,13 @@ import Album from '../../assets/album.png';
 import Artist from '../../assets/artist.png';
 
 
-function MusicDesc() {
+function MusicDesc(props) {
+	const { track } = props;
 	return (
 		<div>
-			<p className="title">Castle on the hill</p>
-			<p className="smallText"><img src={Artist} alt="artist"/> Artist: Ed Sheeran</p>
-			<p className="smallText"><img src={Album} alt="album"/> Album: Devide</p>
+			<p className="title">{track.track_name}</p>
+			<p className="smallText"><img src={Artist} alt="artist"/> Artist: {track.artist_name}</p>
+			<p className="smallText"><img src={Album} alt="album"/> Album: {track.album_name}</p>
 		</div>
 	);
 }

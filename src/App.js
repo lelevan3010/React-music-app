@@ -1,21 +1,21 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
-import MusicCard from './components/MusicCard/MusicCard';
-import MusicBoard from './components/MusicBoard/MusicBoard';
+import MusicBoard from './pages/MusicBoard/MusicBoard';
+import About from './pages/About/About';
+import Lyrics from './pages/Lyrics/Lyrics';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 
 function App() {
 	return (
 		<div className="App">
 			<Header/>
-			<MusicBoard>
-				<MusicCard/>
-				<MusicCard/>
-				<MusicCard/>
-				<MusicCard/>
-				<MusicCard/>
-			</MusicBoard>
+			<Switch>
+            	<Route path="/" exact component={MusicBoard} />
+            	<Route path="/about" component={About} />
+            	<Route path="/lyrics/track/:id" component={Lyrics} />
+          	</Switch>
 			<NavigationBar/>
 		</div>
 	);

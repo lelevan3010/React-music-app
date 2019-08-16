@@ -4,4 +4,23 @@
     background-color: #FF6050;
     position: fixed;
     bottom: 0;
+    color: #f2f2f2;
 }
+
+.NavigationBar svg{
+    display: block;
+    max-height: 2rem;
+    margin-bottom: -.25rem;
+    margin-left: 0.25rem;
+}
+
+.NavigationBar a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.NavigationBar .active{
+    color: rgb(63, 62, 62);
+}
+
+.NavigationBar .active svg { fill: #f2f2f2; }

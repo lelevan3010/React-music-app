@@ -8,13 +8,15 @@
     bottom: 34.85%;
     width: 150px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .LyricsButton{
         width: 100px;
     }
 }
 
 .text{
+    text-align: center;
+    padding-top: 0.5rem;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;

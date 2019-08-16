@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LyricsButton.css';
 
 
-function LyricsButton() {
+function LyricsButton(props) {
+	const { track } = props;
 	return (
-		<button className="LyricsButton">
+		<Link to={`lyrics/track/${track.track_id}`} className="LyricsButton">
 			<div className="text">
 				LYRICS
 			</div>
-		</button>
+		</Link>
 	);
 }
 
