@@ -1,4 +1,4 @@
-# React Contact Manager
+# React Music App
 
 
 <h1 align="center">
